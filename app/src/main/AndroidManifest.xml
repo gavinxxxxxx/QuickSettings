@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.gavin.quicksettings">
+
+    <application>
+
+        <service
+            android:name=".AlipayScanTileService"
+            android:icon="@drawable/ic_alipay"
+            android:label="支付宝扫一扫"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".AlipayCodeTileService"
+            android:icon="@drawable/ic_alipay"
+            android:label="支付宝付款码"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".WXScanTileService"
+            android:icon="@drawable/ic_wx"
+            android:label="微信扫一扫"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".WXCodeTileService"
+            android:icon="@drawable/ic_wx"
+            android:label="微信付款码"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
